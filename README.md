@@ -1,53 +1,107 @@
 # 🗂️ Forsa-Tech Backend API
+A RESTful backend API built with Django and Django REST Framework to power the FORSA-TECH HR and recruitment platform.
 
-This repository contains the **Backend API** for the Forsa-Tech platform.  
-The backend is built with **Django REST Framework (DRF)** and serves multiple roles:
-- 🔒 **Admin:** Platform Owner functionalities.
-- 👥 **HR Managers:** Manage hiring workflows.
-- 👨‍💻 **Developers (Job Seekers):** Build resumes, apply for jobs, and track progress.
+The API provides authentication, authorization, candidate management, CV management, employer management, job management, applications, and recruitment workflows.
 
 ---
 
-## 📌 Key Features
+## 🚀 Overview
 
-**🔹 Platform Owner (Admin):**
-- Manage companies (Add / Edit / Delete).
-- Handle subscription plans and requests.
-- Manage ads and job postings.
-- View and respond to user complaints.
-- Access statistics and export reports.
+The FORSA-TECH REST API serves as the backend layer for the FORSA-TECH recruitment platform.
 
-**🔹 HR Manager:**
-- Filter and shortlist CVs.
-- Accept or reject job applications.
-- Schedule interviews.
-- Analyze market trends.
+It provides structured RESTful endpoints that allow the Flutter Web frontend to communicate with the backend and manage recruitment-related data.
 
-**🔹 Developer (Job Seeker):**
-- Create an ATS-compliant resume.
-- Evaluate & improve CVs.
-- Convert traditional resumes to ATS format.
-- Apply for jobs and track applications.
-- Get job recommendations.
-- Take skill assessments.
-- Receive acceptance notifications by email.
+The API follows a client-server architecture and separates business logic, authentication, database operations, and frontend presentation.
 
 ---
 
-## ⚙️ Tech Stack
+## ✨ Features
 
-- **Framework:** Django 4.x
-- **API:** Django REST Framework
-- **Database:** PostgreSQL (recommended) / SQLite (for development)
-- **Auth:** JWT Authentication (or Session Authentication)
-- **Other:** Celery (optional, for async tasks), Firebase for notifications (if used)
+### 🔐 Authentication
+
+- JWT authentication
+- User registration
+- User login
+- Token-based authorization
+- Protected API endpoints
+
+### 👤 User Management
+
+- User profiles
+- Candidate management
+- Employer management
+- Role-based access control
+
+### 📄 CV Management
+
+- CV creation
+- CV management
+- Candidate professional information
+
+### 💼 Job Management
+
+- Create jobs
+- Update jobs
+- Delete jobs
+- Retrieve available jobs
+- Job application management
+
+### 📋 Recruitment
+
+- Candidate applications
+- Application management
+- Recruitment workflows
+- Employer-side candidate management
 
 ---
 
-## 🚀 Getting Started
+## 🏗️ Architecture
 
-### 📥 Clone the Repository
+```text
+Flutter Web Frontend
+        │
+        │ HTTP / REST
+        ▼
+Django REST Framework
+        │
+        ▼
+   Business Logic
+        │
+        ▼
+     Database
+
+
+| Technology            | Purpose              |
+| --------------------- | -------------------- |
+| Python                | Backend Language     |
+| Django                | Web Framework        |
+| Django REST Framework | API Development      |
+| JWT                   | Authentication       |
+| SQLite                | Database             |
+| REST API              | Client Communication |
+
+📌 Project Status
+
+Backend API developed as part of the FORSA-TECH full-stack HR and recruitment platform.
+
+🔗 Frontend
+
+The API is consumed by the FORSA-TECH Flutter Web application.
+
+Frontend repository:
+
+https://github.com/Lanahamed1/Forsa-Tech-HR
+
 
 ```bash
-git clone https://github.com/safaabouzaid/BackEnd_ForsaTech
-cd forsa-tech-backend
+git clone https://github.com/lanahamed1/BackEnd_ForsaTech
+
+
+
+👨‍💻 Author
+
+Lanahamed
+
+GitHub:
+
+https://github.com/Lanahamed1

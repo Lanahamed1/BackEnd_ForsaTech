@@ -1,4 +1,4 @@
-# 🗂️ Forsa-Tech Backend API
+# 🗂️ Forsa-Tech REST API
 A RESTful backend API built with Django and Django REST Framework to power the FORSA-TECH HR and recruitment platform.
 
 The API provides authentication, authorization, candidate management, CV management, employer management, job management, applications, and recruitment workflows.
